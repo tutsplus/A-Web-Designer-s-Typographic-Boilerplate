@@ -13,7 +13,7 @@ http://aestheticallyloyal.com/public/optimize-legibility/
 */
 
 body  	{ 	text-rendering: optimizeLegibility; 	}
-.foo  	{ 	text-rendering: optimizeSpeed; 			}
+.foo  	{ 	text-rendering: optimizeSpeed; 		}
 
 /*
 -webkit-font-smoothing
@@ -28,29 +28,29 @@ button 	{	-webkit-font-smoothing: antialiased; 	}
 base
 */
 
-html 	{	font: 100%/1.5 Arial, sans-serif;		}
+html 	{	font: 100%/1.5 Arial, sans-serif;	}
 
 /*
 headings
 based on an old version of normalize.css
 */
 
-h1 		{ 	font-size: 2em;		/* 2*16 = 32 */ 		}
-h2 		{ 	font-size: 1.5em;		/* 1.5*16 = 24 */ 	}
+h1 		{ 	font-size: 2em;		/* 2*16 = 32 */ 	}
+h2 		{ 	font-size: 1.5em;	/* 1.5*16 = 24 */ 	}
 h3 		{ 	font-size: 1.17em;	/* 1.17*16 = 18.72 */ 	}
-h4 		{ 	font-size: 1em;		/* 1*16 = 16 */ 		}
+h4 		{ 	font-size: 1em;		/* 1*16 = 16 */ 	}
 h5 		{ 	font-size: 0.83em;	/* 0.83*16 = 13.28 */ 	}
-h6 		{ 	font-size: 0.75em;	/* 0.75*16 = 12 */ 		}
+h6 		{ 	font-size: 0.75em;	/* 0.75*16 = 12 */ 	}
 
 /* 
 paragraphs 
 */
 
 p 		{ 	line-height: 1.5;
-			margin: 0 0 1em;		}
+			margin: 0 0 1em;	}
 
-.indent p+p {	text-indent: 2em;
-				margin-top: -1em;	}
+.indent p+p 	{	text-indent: 2em;
+			margin-top: -1em;	}
 
 /*
 cross-browser hyphenation
@@ -75,36 +75,36 @@ lynx
 a,
 a:visited 	{	text-decoration: underline;	}
 
-a:hover		{ 	text-decoration: none; }
+a:hover		{ 	text-decoration: none; 		}
 
 /* if you want to get specific with your links */
-a[href$=".zip"] { color: tomato; }
+a[href$=".zip"] { 	color: tomato; 			}
 
 /*
 assumed bits and bobs
 because assume makes an ass out of u and me..
 */
 
-strong 	{	font-weight: bold;	}
-em 		{	font-style: italic;	}
+strong 		{	font-weight: bold;		}
+em 		{	font-style: italic;		}
 
 /*
 code snippets
 */
 
 code,
-pre 	{	font-family: monospace, serif;
-    		font-size: 1em;	}
+pre 		{	font-family: monospace, serif;
+    			font-size: 1em;			}
 
 /*
 blockquotes
 */
 
-blockquote {		font-style: italic; 	}
+blockquote 	{	font-style: italic; 		}
 
 blockquote:before {	content: "\201C";
-					display: inline-block;
-					padding-right: .4em;	}
+			display: inline-block;
+			padding-right: .4em;		}
 
 /*
 print styles taken from HTML5 Boilerplate
@@ -113,16 +113,16 @@ https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
 
 @media print {
 
-    * {	background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;					}
+    	* {	background: transparent !important;
+        	color: #000 !important; /* Black prints faster: h5bp.com/s */
+        	box-shadow: none !important;
+        	text-shadow: none !important;			}
 
  	p,
-    h2,
-    h3 {orphans: 3; /* http://css-tricks.com/almanac/properties/o/orphans/ */
-        widows: 3; 	/* http://css-tricks.com/almanac/properties/w/widows/ */}
+    	h2,
+    	h3 {	orphans: 3; /* http://css-tricks.com/almanac/properties/o/orphans/ */
+        	widows: 3; 	/* http://css-tricks.com/almanac/properties/w/widows/ */}
 
-    h2,
-    h3 {page-break-after: avoid;						}
+    	h2,
+    	h3 {	page-break-after: avoid;						}
 }   
