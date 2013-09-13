@@ -77,6 +77,10 @@ a:visited 	{	text-decoration: underline;	}
 
 a:hover		{ 	text-decoration: none; 		}
 
+/* states for accessibility http://meyerweb.com/eric/css/tests/css2/sec05-11-03.htm */
+a:active	{ 	color: tomato; 		}
+a:focus		{ 	border: 1px dotted tomato; 		}
+
 /* if you want to get specific with your links */
 a[href$=".zip"] { 	color: tomato; 			}
 
