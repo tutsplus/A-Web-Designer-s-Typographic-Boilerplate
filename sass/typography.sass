@@ -1,0 +1,180 @@
+/*
+ *A Web Designer’s Typographic Boilerplate
+ *Ian Yates
+ *http://enva.to/18Tx7XB
+ *
+ *licensed under WTFPL 
+ *http://www.wtfpl.net/
+ */
+ 
+$h1-fontsize: 2em;
+$h2-fontsize: 1.5em;
+$h3-fontsize: 1.17em;
+$h4-fontsize: 1em;
+$h5-fontsize: 0.83em;
+$h6-fontsize: 0.75em;
+
+$line-height: 1.5
+
+/*
+ *text-rendering
+ *http://aestheticallyloyal.com/public/optimize-legibility/
+*/
+body
+  text-rendering: optimizeLegibility
+
+.foo
+  text-rendering: optimizeSpeed
+
+/*
+ *-webkit-font-smoothing
+ *http://maxvoltar.com/sandbox/fontsmoothing/
+*/
+
+body, input, button
+  -webkit-font-smoothing: antialiased
+
+/*
+ *base
+*/
+
+html
+  font: 100% / $line-height Arial, sans-serif
+
+/*
+ *headings
+ *based on an old version of normalize.css
+*/
+
+
+h1
+  font-size: $h1-fontsize
+  /* 2*16 = 32
+*/
+
+h2
+  font-size: $h2-fontsize
+  /* 1.5*16 = 24
+*/
+
+h3
+  font-size: $h3-fontsize
+  /* 1.17*16 = 18.72
+*/
+
+h4
+  font-size: $h4-fontsize
+  /* 1*16 = 16
+*/
+
+h5
+  font-size: $h5-fontsize
+  /* 0.83*16 = 13.28
+*/
+
+h6
+  font-size: $h6-fontsize
+  /* 0.75*16 = 12
+*/
+
+/* 
+ *paragraphs
+*/
+
+p
+  line-height: $line-height
+  margin: 0 0 1em
+
+.indent p + p
+  text-indent: 2em
+  margin-top: -1em
+
+/*
+ *cross-browser hyphenation
+ *http://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/
+*/
+
+p
+  -ms-word-break: break-all
+  word-break: break-all
+  /* Non standard for webkit*/
+  word-break: break-word
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  -ms-hyphens: auto
+  hyphens: auto
+
+/*
+ *lynx
+*/
+
+a
+  text-decoration: underline
+  &:visited
+    text-decoration: underline
+  &:hover
+    text-decoration: none
+  &:active
+    color: tomato
+  &:focus
+    border: 1px dotted tomato
+  &[href$=".zip"]
+    color: tomato
+
+/* states for accessibility http://meyerweb.com/eric/css/tests/css2/sec05-11-03.htm
+*/
+
+/* if you want to get specific with your links
+*/
+
+/*
+ *assumed bits and bobs
+ *because assume makes an ass out of u and me..
+*/
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+/*
+ *code snippets
+*/
+
+code, pre
+  font-family: monospace, serif
+  font-size: 1em
+
+/*
+ *blockquotes
+*/
+
+blockquote
+  font-style: italic
+  &:before
+    content: "\201C"
+    display: inline-block
+    padding-right: .4em
+
+/*
+ *print styles taken from HTML5 Boilerplate
+ *https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+*/
+
+@media print
+  *
+    background: transparent !important
+    color: #000 !important
+    /* Black prints faster: h5bp.com/s
+*/
+    box-shadow: none !important
+    text-shadow: none !important
+  p, h2, h3
+    orphans: 3
+    /* http://css-tricks.com/almanac/properties/o/orphans/
+*/
+    widows: 3
+    /* http://css-tricks.com/almanac/properties/w/widows/*/
+  h2, h3
+    page-break-after: avoid
