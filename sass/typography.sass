@@ -5,6 +5,16 @@
  *
  *licensed under WTFPL 
  *http://www.wtfpl.net/
+ */
+ 
+$h1-fontsize: 2em;
+$h2-fontsize: 1.5em;
+$h3-fontsize: 1.17em;
+$h4-fontsize: 1em;
+$h5-fontsize: 0.83em;
+$h6-fontsize: 0.75em;
+
+$line-height: 1.5
 
 /*
  *text-rendering
@@ -29,40 +39,41 @@ body, input, button
 */
 
 html
-  font: 100% / 1.5 Arial, sans-serif
+  font: 100% / $line-height Arial, sans-serif
 
 /*
  *headings
  *based on an old version of normalize.css
 */
 
+
 h1
-  font-size: 2em
+  font-size: $h1-fontsize
   /* 2*16 = 32
 */
 
 h2
-  font-size: 1.5em
+  font-size: $h2-fontsize
   /* 1.5*16 = 24
 */
 
 h3
-  font-size: 1.17em
+  font-size: $h3-fontsize
   /* 1.17*16 = 18.72
 */
 
 h4
-  font-size: 1em
+  font-size: $h4-fontsize
   /* 1*16 = 16
 */
 
 h5
-  font-size: 0.83em
+  font-size: $h5-fontsize
   /* 0.83*16 = 13.28
 */
 
 h6
-  font-size: 0.75em
+  font-size: $h6-fontsize
   /* 0.75*16 = 12
 */
 
@@ -71,7 +82,7 @@ h6
 */
 
 p
-  line-height: 1.5
+  line-height: $line-height
   margin: 0 0 1em
 
 .indent p + p
@@ -86,8 +97,7 @@ p
 p
   -ms-word-break: break-all
   word-break: break-all
-  /* Non standard for webkit
-*/
+  /* Non standard for webkit*/
   word-break: break-word
   -webkit-hyphens: auto
   -moz-hyphens: auto
